@@ -12,7 +12,17 @@ body {
 
 header {
     background-color: #333;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out; 
     padding: 20px;
+}
+
+header.scrolled {
+    background-color: rgba(146, 146, 146, 0.7); 
 }
 
 nav ul {
@@ -80,22 +90,6 @@ nav ul li img {
     padding: 20px;
 }
 
-.categories h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.categories ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-}
-
-.categories ul li a {
-    color: #333;
-    text-decoration: none;
-}
 
 footer {
     background-color: #333;
@@ -137,6 +131,7 @@ footer {
    
 .product-item {
     margin-top: 40px;
+    border: 1.5px solid #000000;
     padding: 15px;
     text-align: center;
     
@@ -160,7 +155,7 @@ footer {
 
 
 .category-item {
-    border: 1px solid #cccccc;
+    border: 1.5px solid #000000;
     margin-top: 5px;
     border-radius: 5px;
     padding: 15px;
@@ -182,7 +177,6 @@ footer {
 }
 
 .category-item a img {
-    background-color:#f9f9f9;
     width: 300px;
     height: 200px;
 }
