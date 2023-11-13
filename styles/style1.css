@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
 }
 
 header {
@@ -34,6 +36,7 @@ nav ul li img {
 
 .banner {
     position: relative;
+    margin-bottom: 20px;
 }
 
 .banner img {
@@ -69,6 +72,37 @@ nav ul li img {
     margin-top: 20px;
 }
 
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.categories h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.categories ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.categories ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
 .fas {
     font-size: 24px;
     color: #000;
@@ -78,3 +112,107 @@ nav ul li img {
     color: #f1c40f;
 }
 
+.featured-products {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.h2-heading {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+
+
+}
+   
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    
+}
+   
+.product-item {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.product-item a {
+    text-decoration: none;
+    color: black;
+
+}
+   
+.product-item:hover {
+    box-shadow: 10px 10px 10px grey;
+    transform: translateY(-10px);
+}
+
+
+.h2-categories {
+    text-align: center;
+}
+
+
+.category-item {
+    border: 1px solid #cccccc;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.category-item a {
+    text-decoration: none;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 15px;
+    color: black;
+}
+   
+.category-item:hover {
+    box-shadow: 10px 10px 10px grey;
+    transform: translateY(-10px);
+}
+
+.category-item a img {
+    background-color:#f9f9f9;
+    width: 300px;
+    height: 200px;
+}
+
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }  
