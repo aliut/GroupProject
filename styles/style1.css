@@ -32,3 +32,12 @@ nav ul li img {
 
 }
 
+.fas {
+    font-size: 24px;
+    color: #000;
+}
+
+.fas:hover {
+    color: #f1c40f;
+}
+
