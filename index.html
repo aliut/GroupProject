@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> <!--Cloudfare CSS logo Credit Given-->
 </head>
 <body>
+    <!--W3school credits--><script> 
+        document.addEventListener("DOMContentLoaded", function() {
+            let prevScrollPos = window.pageYOffset;
+            const header = document.querySelector("header");
+    
+            window.onscroll = function() {
+                let currentScrollPos = window.pageYOffset;
+    
+                if (prevScrollPos > currentScrollPos) {
+                    header.classList.remove("scrolled");
+                } else {
+                    header.classList.add("scrolled");
+                }
+    
+                prevScrollPos = currentScrollPos;
+            };
+        });
+    </script>
+    
+    
     <header>
         <nav>
             <ul>
@@ -88,14 +108,6 @@
 
 
 <br><br><br><br>
-
-
-
-
-
-
-
-
 
 
 
