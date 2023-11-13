@@ -32,6 +32,43 @@ nav ul li img {
 
 }
 
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 36px;
+}
+
+.banner-text p {
+    font-size: 24px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f44336;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
 .fas {
     font-size: 24px;
     color: #000;
