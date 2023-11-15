@@ -7,7 +7,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background: rgb(181, 223, 239);
+    
+
 }
 
 header {
@@ -47,9 +49,23 @@ nav ul li img {
 .banner {
     position: relative;
     margin-bottom: 20px;
+    z-index: 2;
 }
 
-.banner img {
+.banner-container {
+    overflow: hidden;
+}
+
+.banner-slide {
+    display: none;
+
+    
+}
+
+.banner-slide.active {
+    display: block;
+}
+.banner-slide img {
     width: 100%;
     height: 500px;
     object-fit: fill;
@@ -103,7 +119,7 @@ footer {
 }
 
 .fas:hover {
-    color: #f1c40f;
+    color: #fff;
 }
 
 .featured-products {
@@ -126,20 +142,23 @@ footer {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 20px;
+    z-index: 998;
     
 }
    
 .product-item {
     margin-top: 40px;
-    border: 1.5px solid #000000;
+    border: 0px solid #000000;
     padding: 15px;
     text-align: center;
+    z-index: 999;
     
 }
 
 .product-item a {
     text-decoration: none;
     color: black;
+    z-index: 998;
 
 }
    
@@ -155,7 +174,7 @@ footer {
 
 
 .category-item {
-    border: 1.5px solid #000000;
+    border: 0px solid teal;
     margin-top: 5px;
     border-radius: 5px;
     padding: 15px;
@@ -182,31 +201,110 @@ footer {
 }
 
 
-.bg {
-    animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-    bottom:0;
-    left:-50%;
-    opacity:.5;
-    position:fixed;
-    right:-50%;
-    top:0;
-    z-index:-1;
+#canv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998; 
+    pointer-events: none; 
+
+}
+
+
+
+
+
+
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    z-index: 2;
+    margin-bottom: 20px;
   }
   
-  .bg2 {
-    animation-direction:alternate-reverse;
-    animation-duration:4s;
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    transition: opacity 1s ease-in-out;
+
+    
+  }
+
+
+  .mySlides.active {
+    opacity: 1;
+}
+  
+.mySlides img{
+    margin-top: 10px;
+    transition: opacity 1s ease-in-out;
+
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
   
-  .bg3 {
-    animation-duration:5s;
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
   }
-  @keyframes slide {
-    0% {
-      transform:translateX(-25%);
-    }
-    100% {
-      transform:translateX(25%);
-    }
-  }  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 10s;
+}
+
+@keyframes fade {
+    0% {opacity: 0} /* Start with completely transparent */
+    25% {opacity: 0.5} /* Fade in gradually */
+    50% {opacity: 1}
+    75% {opacity: 0.5}
+    100% {opacity: 0} /* Fully visible at the end */
+}
+
+.hr-body {
+    border-top: 3px solid black;
+
+}
