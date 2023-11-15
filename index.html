@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Arngen</title>
     <link rel="stylesheet" href="styles/styles1.css">
+    <script src="snow.js"></script>
     <link rel="icon" href="images/website-logo.gif" type="image/icon type">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> <!--Cloudfare CSS logo Credit Given-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
+    
+    <canvas id='canv'></canvas>
+
     <!--W3school credits--><script> 
         document.addEventListener("DOMContentLoaded", function() {
             let prevScrollPos = window.pageYOffset;
@@ -42,26 +47,109 @@
             </ul>
         </nav>
     </header>
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div> <!-- credits to Chris Smith https://devdevout.com/css/css-animated-backgrounds -->  
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
     <section class="banner">
-            <img src="https://www.edesk.com/wp-content/uploads/2021/03/find-trending-products-sell-ecommerce.png" alt="banner">
-            <div class="banner-text">
-                <h1>Arngen.net</h1>
-                <p>A name you can trust.</p>
-                <a href="#" class="btn">Shop Now</a>
-            </div>
-        </section>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="https://www.autobritt.ch/wp-content/uploads/2022/12/banniere-page-winter_deals.jpg" style="width:100%">
+      <div class="banner-text">
+        <h1>Arngen.net</h1>
+        <p>A name you can trust.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+      
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="https://www.edesk.com/wp-content/uploads/2021/03/find-trending-products-sell-ecommerce.png" style="width:100%">
+      <div class="banner-text">
+        <h1>Arngen.net</h1>
+        <p>A name you can trust.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="https://www.autobritt.ch/wp-content/uploads/2022/12/banniere-page-winter_deals.jpg" style="width:100%">
+      <div class="banner-text">
+        <h1>Arngen.net</h1>
+        <p>A name you can trust.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+    </section>
+
+
+    <script>
+ let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // Automatic slide change after 10 seconds
+        setInterval(function () {
+            plusSlides(1);
+        }, 10000);
+    </script>
+
+
+    </script>
+    
+    
+    
+    
+    
+
+
 
         
         
@@ -74,7 +162,7 @@
 <br>
 
 
-
+<hr class="hr-body">
 
 
 
@@ -86,6 +174,7 @@
                     <h3>Electronics</h3>
                 </a>
             </div>
+
             <div class="category-item">
                 <a href="#">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuWPjp0uNyirmygf0wxtF1VRjfMgcvxtxaag&usqp=CAU" alt="Gadgets">
@@ -105,14 +194,9 @@
                 </a>
             </div>
         </section>
-
+        <hr class="hr-body">
 
 <br><br><br><br>
-
-
-
-
-
 
 
 
@@ -178,25 +262,15 @@
                         <p>$29.99</p>
                     </a>
                 </div>
-                <div class="product-item">
-                    <a href="#">
-                        <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
-                        <h3>Product 9</h3>
-                        <p>$29.99</p>
-                    </a>
-                </div>                
+             
             </div>
         </section>
-
-
-
-
-
 
 
     <footer>
         <p>Project Website</p>
     </footer>
+    <script src="snow.js"></script>
 </body>
 </html>
 
