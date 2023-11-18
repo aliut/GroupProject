@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+
+        document.addEventListener("DOMContentLoaded", function() {
             let prevScrollPos = window.pageYOffset;
             const header = document.querySelector("header");
     
