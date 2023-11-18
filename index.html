@@ -1,279 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Arngen</title>
     <link rel="stylesheet" href="styles/styles1.css">
-    <script src="snow.js"></script>
     <link rel="icon" href="images/website-logo.gif" type="image/icon type">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> <!--Cloudfare CSS logo Credit Given-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"><!--Cloudfare CSS logo Credit Given-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-<body>
-    
+  </head>
+  <body>
     <canvas id='canv'></canvas>
-
-    <!--W3school credits--><script> 
-        document.addEventListener("DOMContentLoaded", function() {
-            let prevScrollPos = window.pageYOffset;
-            const header = document.querySelector("header");
-    
-            window.onscroll = function() {
-                let currentScrollPos = window.pageYOffset;
-    
-                if (prevScrollPos > currentScrollPos) {
-                    header.classList.remove("scrolled");
-                } else {
-                    header.classList.add("scrolled");
-                }
-    
-                prevScrollPos = currentScrollPos;
-            };
-        });
-    </script>
-    
-    
     <header>
-        <nav>
-            <ul>
-                <li><img src="images/website-logo.gif"></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><span class="fas fa-search"></span></a></li>
-                <li><a href="#"><span class="fas fa-shopping-cart"></span></a></li>
-                <li><a href="#"><span class="fas fa-heart"></span></a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <img src="images/website-logo.gif">
+          </li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Categories</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fas fa-search"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fas fa-shopping-cart"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fas fa-heart"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
-
-
-
     <section class="banner">
-        <!-- Slideshow container -->
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-      
-      <img src="https://www.autobritt.ch/wp-content/uploads/2022/12/banniere-page-winter_deals.jpg" style="width:100%">
-      <div class="banner-text">
-        <h1>Arngen.net</h1>
-        <p>A name you can trust.</p>
-        <a href="#" class="btn">Shop Now</a>
-    </div>
-      
-    </div>
-  
-    <div class="mySlides fade">
-      
-      <img src="https://www.edesk.com/wp-content/uploads/2021/03/find-trending-products-sell-ecommerce.png" style="width:100%">
-      <div class="banner-text">
-        <h1>Arngen.net</h1>
-        <p>A name you can trust.</p>
-        <a href="#" class="btn">Shop Now</a>
-    </div>
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="https://www.autobritt.ch/wp-content/uploads/2022/12/banniere-page-winter_deals.jpg" style="width:100%">
-      <div class="banner-text">
-        <h1>Arngen.net</h1>
-        <p>A name you can trust.</p>
-        <a href="#" class="btn">Shop Now</a>
-    </div>
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="https://www.autobritt.ch/wp-content/uploads/2022/12/banniere-page-winter_deals.jpg" style="width:100%">
+          <div class="banner-text">
+            <h1>Arngen.net</h1>
+            <p>A name you can trust.</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <img src="https://www.edesk.com/wp-content/uploads/2021/03/find-trending-products-sell-ecommerce.png" style="width:100%">
+          <div class="banner-text">
+            <h1>Arngen.net</h1>
+            <p>Quality Products</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <img src="https://www.autobritt.ch/wp-content/uploads/2022/12/banniere-page-winter_deals.jpg" style="width:100%">
+          <div class="banner-text">
+            <h1>Arngen.net</h1>
+            <p>100% Customer Satisfaction</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </section>
-
-
-    <script>
- let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-
-        // Automatic slide change after 10 seconds
-        setInterval(function () {
-            plusSlides(1);
-        }, 10000);
-    </script>
-
-
-    </script>
-    
-    
-    
-    
-    
-
-
-
-        
-        
-        
-        
-<br>         
-
-        <h2 class="h2-categories">Browse Categories</h2>
-
-<br>
-
-
-<hr class="hr-body">
-
-
-
-        <section class="categories">
-            
-            <div class="category-item">
-                <a href="#">
-                    <img src="https://e7.pngegg.com/pngimages/697/440/png-clipart-home-appliance-consumer-electronics-lg-electronics-laptop-laptop-kitchen-electronics.png" alt="Electronics">
-                    <h3>Electronics</h3>
-                </a>
-            </div>
-
-            <div class="category-item">
-                <a href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuWPjp0uNyirmygf0wxtF1VRjfMgcvxtxaag&usqp=CAU" alt="Gadgets">
-                    <h3>Gadgets</h3>
-                </a>
-            </div>
-            <div class="category-item">
-                <a href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvyGRC9RQEGoAzA6S8OqoHYy15BgU7c1KJaQ&usqp=CAU" alt="Toys">
-                    <h3>Toys</h3>
-                </a>
-            </div>
-            <div class="category-item">
-                <a href="#">
-                    <img src="https://img.freepik.com/free-vector/mobile-phone-accessories-cartoon-illustration-set-vr-glasses-3d-model-cellphones-case-charger-battery-headphones-smart-watch-memory-card-selfie-stick-technology-smartphone-concept_74855-23119.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699833600&semt=ais" alt="Accessories">
-                    <h3>Accessories</h3>
-                </a>
-            </div>
-        </section>
-        <hr class="hr-body">
-
-<br><br><br><br>
-
-
-
-
-        <h2 class="h2-heading">Top Trending Products</h2>
-
-
-        <section class="featured-products">
-            <div class="product-list">
-                <div class="product-item">
-                    <a href="#">
-                        <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
-                        <h3>Product 1</h3>
-                        <p>$29.99</p>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="#">
-                        <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
-                        <h3>Product 2</h3>
-                        <p>$29.99</p>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="#">
-                        <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
-                        <h3>Product 3</h3>
-                        <p>$29.99</p>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="#">
-                        <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
-                        <h3>Product 4</h3>
-                        <p>$29.99</p>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="#">
-                        <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
-                        <h3>Product 5</h3>
-                        <p>$29.99</p>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="#">
-                        <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
-                        <h3>Product 6</h3>
-                        <p>$29.99</p>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="#">
-                        <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
-                        <h3>Product 7</h3>
-                        <p>$29.99</p>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="#">
-                        <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
-                        <h3>Product 8</h3>
-                        <p>$29.99</p>
-                    </a>
-                </div>
-             
-            </div>
-        </section>
-
-
+    <script src="https://s3.ap-south-1.amazonaws.com/blob-ap-south-1-ukyez4/sara/d1/d130/d1306cf4-5fab-4e45-b7c5-d57548730c85.bin?response-content-disposition=attachment%3B%20filename%3D%22slideshow.js%22&response-content-type=text%2Fjavascript&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231118T182324Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=df0e826df653feaff42524aa40e7b6ec7bd6b2a42154e4950d8919eae10214b7"></script><!--from my github sideshow.js-->
+    <br>
+    <h2 class="h2-categories">Browse Categories</h2>
+    <br>
+    <hr class="hr-body">
+    <section class="categories">
+      <div class="category-item">
+        <a href="#">
+          <img src="https://e7.pngegg.com/pngimages/697/440/png-clipart-home-appliance-consumer-electronics-lg-electronics-laptop-laptop-kitchen-electronics.png" alt="Electronics">
+          <h3>Electronics</h3>
+        </a>
+      </div>
+      <div class="category-item">
+        <a href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuWPjp0uNyirmygf0wxtF1VRjfMgcvxtxaag&usqp=CAU" alt="Gadgets">
+          <h3>Gadgets</h3>
+        </a>
+      </div>
+      <div class="category-item">
+        <a href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvyGRC9RQEGoAzA6S8OqoHYy15BgU7c1KJaQ&usqp=CAU" alt="Toys">
+          <h3>Toys</h3>
+        </a>
+      </div>
+      <div class="category-item">
+        <a href="#">
+          <img src="https://img.freepik.com/free-vector/mobile-phone-accessories-cartoon-illustration-set-vr-glasses-3d-model-cellphones-case-charger-battery-headphones-smart-watch-memory-card-selfie-stick-technology-smartphone-concept_74855-23119.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699833600&semt=ais" alt="Accessories">
+          <h3>Accessories</h3>
+        </a>
+      </div>
+    </section>
+    <hr class="hr-body">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="h2-heading">Top Trending Products</h2>
+    <section class="featured-products">
+      <div class="product-list">
+        <div class="product-item">
+          <a href="#">
+            <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
+            <h3>Product 1</h3>
+            <p>$29.99</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
+            <h3>Product 2</h3>
+            <p>$29.99</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
+            <h3>Product 3</h3>
+            <p>$29.99</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
+            <h3>Product 5</h3>
+            <p>$29.99</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
+            <h3>Product 6</h3>
+            <p>$29.99</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
+            <h3>Product 7</h3>
+            <p>$29.99</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="https://arngren.net/sitebuilder/images/elsykkel-dame-rod-80668_El_sykkel_Freego_250w_36v_1-230x140.jpg" alt="Product">
+            <h3>Product 8</h3>
+            <p>$29.99</p>
+          </a>
+        </div>
+      </div>
+    </section>
     <footer>
-        <p>Project Website</p>
+      <p>Project Website</p>
     </footer>
-    <script src="snow.js"></script>
-</body>
+    <script src="https://s3.ap-south-1.amazonaws.com/blob-ap-south-1-ukyez4/sara/ee/ee68/ee685416-d8c7-4df7-93da-5407537c1215.bin?response-content-disposition=attachment%3B%20filename%3D%22snow.js%22&response-content-type=text%2Fjavascript&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231118T181212Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=1eb241dc6b913977af031a788daa1274dacfcc1aa473b3a2f37603c3ec0eed1c"></script><!--from my github snow.js-->
+    <script src="https://s3.ap-south-1.amazonaws.com/blob-ap-south-1-ukyez4/sara/64/64ed/64ed53c7-8bd9-4b2c-a190-b1219c5c1f26.bin?response-content-disposition=attachment%3B%20filename%3D%22banner.js%22&response-content-type=text%2Fjavascript&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231118T181752Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=25a2bc987aabf3238e3d5bec1db6911d5d295c3b72deaf84c2c2a1ec430d2886"></script><!--from my github banner.js-->
+  </body>
 </html>
-
-
-
-
