@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Arngen</title>
+    <link rel="stylesheet" href="../../styles/styles1.css">
     <link rel="stylesheet" href="../../styles/styles2.css">
     <link rel="icon" href="../../images/website-logo.gif" type="image/icon type">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <!-- Cloudfare CSS logos Credit Given-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      .mylist li:hover{
+        color: blue;
+        
+      }
+      .featured-products{
+        margin-right: -400px
+      }
+    </style>
   </head>
 <body>
     <canvas id='canv'></canvas>
@@ -28,8 +38,7 @@
             
             <li>
               <a href="#">
-               
-              </a>
+               </a>
             </li>
             <!--
             <li>
@@ -61,20 +70,20 @@
       <aside>
         <ul>
         <li><b>Electronics</b>
-            <ul>
-  <li>Camera & Photo</li>
-  <li>Cell Phone</li>
-  <li>GPS System</li>
-  <li>Office Electronics</li>
-  <li>Car Electronics</li>
-  <li>Power Strips & Surge Protectors</li>
-  <li>Telephone</li>
-  <li>Electronics Cables</li>
-  <li>Electronics Mounts</li>
-  <li>Recording Microphones</li>
-  <li>Electronics Power Protection Products</li>
-  <li>Electrical Cord Management</li>
- 
+            <ul class="mylist">
+  <li>Football</li>
+  <li>Cricket</li>
+  <li>Tennis</li>
+  <li>Volleyball</li>
+  <li>Table Tennis</li>
+  <li>Golf</li>
+  <li>Snooker</li>
+  <li>Rugby</li>
+  <li>Basketball</li>
+  <li>Ice Hockey</li>
+  <li>Swimming</li>
+  <li>Polo</li>
+   
 
 
 
@@ -85,6 +94,32 @@
         </li>
 </ul>
       </aside>
+      <section class="featured-products">
+        <div class="product-list">
+          <div class="product-item">
+            <a href="Products/charger.html">
+              <img src="https://m.media-amazon.com/images/I/51e3Cc-kqCL.__AC_SX300_SY300_QL70_FMwebp_.jpg" width="200px" height="200px" alt="Product">
+              <h3>Belkin MagSafe 3-in-1 Wireless Charging Stand</h3>
+              <p>$110</p>
+            </a>
+          </div>
+          <div class="product-item">
+            <a href="Products/tv.html">
+              <img src="https://m.media-amazon.com/images/I/71nyuZngxIL._AC_SX679_.jpg" width="200px" height="200px" alt="Product">
+              <h3>Lilliput A11 10.1-Inch 4K Photo and Video Portable Monitor</h3>
+              <p>$350</p>
+            </a>
+          </div>
+          <div class="product-item">
+            <a href="Products/extensioncable.html">
+              <img src="https://m.media-amazon.com/images/I/61k2sNHfBuL._AC_SX679_.jpg" width="200px" height="200px" alt="Product">
+              <h3>Belkin 6-Outlet Power Strip Surge Protector w/Flat Rotating Plug</h3>
+              <p>$89</p>
+            </a>
+          </div>
+         
+        </div>
+      </section>
 
 
 
@@ -96,4 +131,8 @@
 
 
 </body>
+<footer>
+  <p>Project Website</p>
+</footer>
+
 </html>

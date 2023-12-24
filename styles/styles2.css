@@ -14,7 +14,7 @@ body {
 
 aside{
     background-color: rgb(217, 216, 216);
-    height:624px;
+    height:100%;
     width:300px;
     float: left;
 }
@@ -309,3 +309,45 @@ footer {
     border-top: 3px solid black;
 
 }
+.float{
+    float: right;
+    width: 50%;
+    
+    
+  }
+
+  .float li {
+    margin-left: -170px;
+    margin-top: 20px;
+    
+  }
+
+  .products{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  
+    
+  }
+
+  .picture img {
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+  }
+  
+footer{
+    margin-top: 19.5%;
+    width: 100%;
+
+  }
+
+.price{
+    font-size: 40px;
+    margin-left: 580px;
+    font-weight: bold;
+
+}
+

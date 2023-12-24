@@ -67,13 +67,14 @@ nav ul li a {
 
 
 .btn {
-    display: inline-block;
+    position: relative;
     background-color: #f44336;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-top: 20px;
+    top: -85px;
+    margin-left: 850px;
 }
 
 .categories {
@@ -292,3 +293,5 @@ footer {
     border-top: 3px solid black;
 
 }
+
+
