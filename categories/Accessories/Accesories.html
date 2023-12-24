@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arngen</title>
+    <link rel="stylesheet" href="../../styles/styles2.css">
+    <link rel="icon" href="../../images/website-logo.gif" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- Cloudfare CSS logos Credit Given-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        z-index: 998;
+        padding-left: 70px;
+
+
+    }
+
+    .product-item {
+        margin-top: 40px;
+        border: 0px solid #000000;
+        padding: 15px;
+        text-align: center;
+        z-index: 999;
+
+    }
+
+    .product-item a {
+        text-decoration: none;
+        color: black;
+        z-index: 998;
+
+    }
+
+    .product-item:hover {
+        box-shadow: 10px 10px 10px grey;
+        transform: translateY(-10px);
+        transition: transform 330ms ease-in-out;
+
+    }
+
+    .featured-products {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <canvas id='canv'></canvas>
+    <script src="https://cdn.jsdelivr.net/gh/aliut/GroupProject/banner.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <img src="../../images/website-logo.gif">
+                </li>
+                <li>
+                    Delievering WorldWide🌎
+                </li>
+                <li>
+                    <input type="text" placeholder="not working dont try to search">
+                    <span class="fas fa-search" style="position: relative; top: -7px;"></span>
+                </li>
+
+                <li>
+                    <a href="#">
+
+                    </a>
+                </li>
+                <!--
+            <li>
+              <a href="#">
+                
+                <span class="fas fa-heart"></span>
+              </a>
+            </li>
+          -->
+                <li>
+
+                    <span class="cart">Cart</span>
+                    <span class="fas fa-shopping-cart"></span>
+
+                </li>
+                <li>
+                    <a href="#">
+                        Sign In
+                    </a>
+                </li>
+                <LI>
+                    <a href="#">
+                        Sign Up
+                    </a>
+                </LI>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <ul>
+            <li><b>Accessories</b>
+                <ul>
+                    <li>Camera & Photo Accessories</li>
+                    <li>Cell Phone Accessories</li>
+                    <li>GPS System Accessories</li>
+                    <li>Office Electronics Accessories</li>
+                    <li>Car Electronics Accessories</li>
+                    <li>Telephone Accessories</li>
+                    <li>Recording Microphones & Accessories</li>
+                    <li>Cable Organizer Bags</li>
+                    <li>Chargers</li>
+                    <li>Head Phones</li>
+                    <li>Cases</li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </aside>
+
+    <div class="product-list">
+        <div class="product-item">
+            <a href="Products/Iphone cases.html">
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2022/10/iphone14cases-2048px-2520-2x1-1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024"
+                    alt="Cases" width="240" height="140">
+                <h3>Iphone 13 Cases</h3>
+                <br>
+                <br>
+                <br>
+                <p>$12.99</p>
+            </a>
+        </div>
+
+        <div class="product-item">
+            <a href="Products/Headphones.html">
+                <img src="https://vmart.pk/wp-content/uploads/2023/06/JBL-Tune-520BT-Wireless-On-Ear-Headphones-Blue.webp"
+                    alt=" JBL Tune 520BT Wireless On-Ear Headphones - Blue" width="240" height="140">
+                <h3> JBL Tune 520BT Wireless On-Ear Headphones - Blue</h3>
+                <p>$31.99</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="Products/Camera lens.html">
+                <img src="https://www.tejar.pk/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/s/o/sony_fe_24-70_mm_f2.8_gm_digital_camera_lense1_-_tejar.jpg"
+                    alt="Camera lens" width="240" height="140">
+                <h3>Sony FE 24-70 mm F2.8 GM Digital Camera Lens</h3>
+                <p>$145.49</p>
+            </a>
+        </div>
+    </div>
+
+    </section>
+
+
+</html>
