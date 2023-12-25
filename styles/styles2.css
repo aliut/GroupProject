@@ -350,4 +350,17 @@ footer{
     font-weight: bold;
 
 }
+.h1c {
+    text-align: center;
+            font-size: 50px;
+}
+.Mail {
+    padding-left: 20px;
+}
+.mylist li:hover {
+    color: blue;
 
+}
+.featured-products{
+    margin-right: -400px
+  }
